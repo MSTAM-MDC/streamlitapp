@@ -24,3 +24,6 @@ if st.button('Predict Sentiment'):
         st.write('Positive Sentiment')
     else:
         st.write('Negative Sentiment')
+tab1, tab2 = st.tabs(["About", "Why"])
+tab1.write("Sentiment analysis, also known as opinion mining, is the process of determining the sentiment or emotion expressed in a piece of text. It involves using natural language processing (NLP) techniques to analyze and classify subjective information as positive, negative, or neutral.")
+tab1.write("In summary, sentiment analysis empowers businesses to make informed decisions, enhance customer experiences, and safeguard their brand reputation.")
