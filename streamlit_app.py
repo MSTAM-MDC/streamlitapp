@@ -1,6 +1,13 @@
 import streamlit as st
 import pickle
 
+# Define a function to load the model and apply the st.cache decorator
+@st.cache(allow_output_mutation=True)
+def load_model():
+    with open('nlp.pkl', 'rb') as file:
+        model = pickle.load(file)
+    return model
+
 # Load the pickled model
 with open('nlp.pkl', 'rb') as file:
     model = pickle.load(file)
